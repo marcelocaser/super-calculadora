@@ -28,8 +28,8 @@ window.addEventListener("load", () => {
   inputRemainderTwo = document.querySelector("#remainderTwo");
   inputFactorialOne = document.querySelector("#factorialOne");
   inputFactorialTwo = document.querySelector("#factorialTwo");
-  inputNumberA.addEventListener("keyup", calculate);
-  inputNumberB.addEventListener("keyup", calculate);
+  inputNumberA.addEventListener("input", calculate);
+  inputNumberB.addEventListener("input", calculate);
 });
 
 function calculate(event) {
