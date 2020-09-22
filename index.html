@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Super Calculadora</h1>
+      <div class="row">
+        <div class="col s6">
+          <label>Primeiro número (A):</label>
+          <input id="numberA" type="number" />
+        </div>
+        <div class="col s6">
+          <label>Segundo número (B):</label>
+          <input id="numberB" type="number" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h4 style="text-align: center; padding-top: 20px">Cálculos</h4>
+      <div class="row">
+        <div class="col s4">
+          <label>A soma de (a+b):</label>
+          <input id="sum" type="text" readonly />
+        </div>
+
+        <div class="col s4">
+          <label>Subtração 1 (a - b):</label>
+          <input id="subtractionOne" type="text" readonly />
+        </div>
+
+        <div class="col s4">
+          <label>Subtração 2 (b - a):</label>
+          <input id="subtractionTwo" type="text" readonly />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s4">
+          <label>Multiplicação (a * b):</label>
+          <input id="multiplication" type="text" readonly />
+        </div>
+        <div class="col s4">
+          <label>Divisão 1 (a / b):</label>
+          <input id="divisionOne" type="text" readonly />
+        </div>
+        <div class="col s4">
+          <label>Divisão 2 (b / a):</label>
+          <input id="divisionTwo" type="text" readonly />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s4">
+          <label>Quadrado de a (a²):</label>
+          <input id="squaredOne" type="text" readonly />
+        </div>
+        <div class="col s4">
+          <label>Quadrado de b (b²):</label>
+          <input id="squaredTwo" type="text" readonly />
+        </div>
+        <div class="col s4">
+          <label>Divisores inteiros de a:</label>
+          <input id="remainderOne" type="text" readonly />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s4">
+          <label>Divisores inteiros de b:</label>
+          <input id="remainderTwo" type="text" readonly />
+        </div>
+        <div class="col s4">
+          <label>Fatorial de a (a!):</label>
+          <input id="factorialOne" type="text" readonly />
+        </div>
+        <div class="col s4">
+          <label>Fatorial de b (b!):</label>
+          <input id="factorialTwo" type="text" readonly />
+        </div>
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./helpers/formatHelpers.js"></script>
+  </body>
+</html>
