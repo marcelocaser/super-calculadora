@@ -6,8 +6,8 @@ let inputSubtractionTwo = null;
 let inputMultiplication = null;
 let inputDivisionOne = null;
 let inputDivisionTwo = null;
-let inputSquaredOne = null;
-let inputSquaredTwo = null;
+let inputPowOne = null;
+let inputPowTwo = null;
 let inputRemainderOne = null;
 let inputRemainderTwo = null;
 let inputFactorialOne = null;
@@ -22,8 +22,8 @@ window.addEventListener("load", () => {
   inputMultiplication = document.querySelector("#multiplication");
   inputDivisionOne = document.querySelector("#divisionOne");
   inputDivisionTwo = document.querySelector("#divisionTwo");
-  inputSquaredOne = document.querySelector("#squaredOne");
-  inputSquaredTwo = document.querySelector("#squaredTwo");
+  inputPowOne = document.querySelector("#powOne");
+  inputPowTwo = document.querySelector("#powTwo");
   inputRemainderOne = document.querySelector("#remainderOne");
   inputRemainderTwo = document.querySelector("#remainderTwo");
   inputFactorialOne = document.querySelector("#factorialOne");
@@ -44,8 +44,8 @@ function calculate(event) {
   inputMultiplication.value = multiplication(valueFromA, valueFromB);
   inputDivisionOne.value = division(valueFromA, valueFromB);
   inputDivisionTwo.value = division(valueFromB, valueFromA);
-  inputSquaredOne.value = squared(valueFromA, 2);
-  inputSquaredTwo.value = squared(valueFromB, 2);
+  inputPowOne.value = pow(valueFromA, 2);
+  inputPowTwo.value = pow(valueFromB, 2);
   inputRemainderOne.value = remainder(valueFromA) + " (" + remainder(valueFromA).length + ")";
   inputRemainderTwo.value = remainder(valueFromB) + " (" + remainder(valueFromB).length + ")";
   inputFactorialOne.value = valueFromA <= 21 ? formatNumber(factorial(valueFromA)) : factorial(valueFromA);
@@ -71,7 +71,7 @@ function multiplication(numberOne, numberTwo) {
   return numberOne * numberTwo;
 }
 
-function squared(number, power) {
+function pow(number, power) {
   return number ** power;
 }
 
